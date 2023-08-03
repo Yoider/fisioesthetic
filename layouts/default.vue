@@ -1,13 +1,13 @@
 <template>
-  <v-app>
-    <Preloader v-if="isLoading" />
+  <v-app fluid>
     <Toolbar />
     <v-main>
       <v-container>
+        <!-- <Preloader v-if="isLoading" /> -->
         <Nuxt />
       </v-container>
     </v-main>
-
+    <FixedBtn />
     <v-footer :absolute="!fixed" app>
       <FootherComponent />
       <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
@@ -43,11 +43,11 @@ export default {
     };
   },
   mounted() {
-    // Simula el tiempo de carga de la página (eliminar esto en tu aplicación real)
     setTimeout(() => {
-      this.isLoading = false; // Cuando la página haya cargado, ocultar el preloader
-    }, 3000); // Tiempo de carga simulado de 3 segundos (puedes ajustarlo según tus necesidades)
+      this.isLoading = false;
+    }, 3000);
   },
 };
 </script>
+
 <style scoped></style>

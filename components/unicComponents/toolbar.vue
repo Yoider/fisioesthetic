@@ -1,8 +1,9 @@
 <template>
   <section>
+    
     <div class="container">
       <header>
-        <h1 href="#" class="logo">Fisioestetic</h1>
+        <h1 href="#" class="logo">Fisioesthetic</h1>
         <ul>
           <li>
             <a
@@ -35,7 +36,7 @@
         <p>
           {{ text }}
         </p>
-        <a href="#">Leer Más</a>
+        <!-- <a href="#">Leer Más</a> -->
       </div>
       <div class="imgBx">
         <img class="fisio" src="~/static/toolbar/fisioterapia.png" />
@@ -325,6 +326,7 @@ header ul li a.active {
   .content p {
     font-size: 1em;
     color: #8a2435;
+    text-align: center;
   }
   .imgBx img {
     max-width: 250px;

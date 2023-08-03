@@ -7,7 +7,14 @@
       }"
     ></span>
     <div class="content">
-      <img :src="urlImg" />
+      <v-img class="Img" :src="urlImg" > 
+        <div class="textContent" v-if="imgTitle !== ''">
+          <h2>
+            {{imgTitle}}
+          </h2>
+        </div>
+      </v-img>
+      
     </div>
   </div>
 </template>
@@ -27,15 +34,23 @@ export default {
       type: String,
       default: "#00b7ff", // Valor por defecto para color2
     },
+    imgTitle: {
+      type: String,
+      default: "",
+    }
   },
 };
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
 }
 .box {
   position: relative;
@@ -56,6 +71,7 @@ export default {
   bottom: 0;
   z-index: -1;
   pointer-events: none;
+  top: -78px;
 }
 /* square one */
 .container .box span::before {
@@ -105,11 +121,37 @@ export default {
   transition: 0.5s;
   backdrop-filter: blur(10px);
 }
-.container .box .content img {
+.container .box .content .Img {
   height: 100%;
   width: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
   border-radius: 5%;
+}
+
+.textContent {
+  position: relative;
+  /* left: -25px; */
+  padding: 0 10px; 
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius:  20px 20px 0 0;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  transition: 0.5s;
+  color: #8a2435;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.textContent h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .box{
+    height: 360px;
+    width: 300px;
+  }
 }
 </style>

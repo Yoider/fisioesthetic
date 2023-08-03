@@ -200,4 +200,21 @@ export default {
   padding: 17px 33px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 600px) {
+  .box {
+    height: 400px;
+    width: 260px;
+    margin: 50px 0px;
+  }
+  .box .content {
+    left: 0px;
+    padding: 10px 0;
+  }
+  .container .box:hover .content {
+    left: 0!important;
+    height: 400px;
+    width: 260px;
+    padding: 15px 0;
+  }
+}
 </style>

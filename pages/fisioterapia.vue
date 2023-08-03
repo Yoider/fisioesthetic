@@ -61,11 +61,12 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="d-flex justify-center align-center">
       <imageSquares
         color1="#ff00f98c"
         color2="#00bfffcf"
         :urlImg="require('@/static/imageSquares/postoperatorio.jpeg')"
+        imgTitle="drenaje postoperatorio"
       />
 
       <CardDesc
@@ -130,7 +131,7 @@
       <CardDesc
         color1="#ff00f98c"
         color2="#00bfffcf"
-        cardTitle="Maracaje abdominal Colombiano"
+        cardTitle="Marcaje abdominal Colombiano"
         cardText=" ¡Transforma tu cuerpo con el Marcaje Abdominal Colombiano! Técnicas
         moldeadoras únicas para una definición sin igual. Olvida la hinchazón y
         el estreñimiento con nuestro enfoque en la descongestión intestinal.
