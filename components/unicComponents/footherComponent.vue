@@ -34,7 +34,7 @@ section {
   /* align-items: center; */
   left: 0;
   display: flex; 
-  height: 200px;
+  height: 220px;
   position: absolute;
   width: 100%;
   border-radius: 10px;

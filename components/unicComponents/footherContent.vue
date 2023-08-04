@@ -49,7 +49,22 @@
         </div>
       </div>
     </v-col>
-    
+    <v-col
+        cols="12"
+        absolute
+        style="text-transform: uppercase; color: grey"
+        class="mt-3 d-flex justify-center align-center"
+      >
+        <v-col class="d-flex justify-center">
+          <p class="DeepText">por YM +34 604-87-02-88</p> 
+        </v-col>
+        <v-col class="d-flex justify-center">
+          <a class="DeepText" src="https://www.pexels.com">imagenes: paxels</a>
+        </v-col>
+        <v-col class="d-flex justify-center">
+          <a class="DeepText" src="/atr">Atribución de iconos</a>
+        </v-col>
+      </v-col>
   </v-row>
 </template>
   
@@ -67,6 +82,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
+  
   .cont {
     display: inline-block;
     display: flex;
@@ -113,6 +129,14 @@
     text-decoration: none;
     margin-bottom: 10px;
   }
+  .DeepText {
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 10px;
+  line-height: 1em;
+  color: grey;
+  text-transform: uppercase;
+  text-align: center;
+}
   @media screen and (max-width: 600px){
     .content .box {
       min-width: 280px;

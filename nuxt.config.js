@@ -3,16 +3,19 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - fisioesthetic',
-    title: 'fisioesthetic',
+    titleTemplate: '%s - FisioEsthetic',
+    title: 'Tratamientos de Fisioterapia y Estética - FisioEsthetic',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'En FisioEsthetic ofrecemos tratamientos de fisioterapia y estética de calidad. Descubre nuestros servicios personalizados para realzar tu belleza y mejorar tu bienestar.' },
+      { name: 'format-detection', content: 'telephone=no' },
+      //metadata
+      { name: 'robots', content: 'index, follow' }, // Permitir indexación y seguimiento
+      { name: 'keywords', content: 'fisioterapia, estética, tratamientos, salud, belleza, bienestar' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

@@ -36,7 +36,6 @@
             color1="#ff00f98c"
             color2="#00bfffcf"
             titleCard="Presoterapia"
-            :urlImg="require('@/static/cardTwo/presoterapia.jpg')"
           />
           <CardTwo
             topCircleOne="300px"
@@ -46,7 +45,7 @@
             color1="#ff00f98c"
             color2="#00bfffcf"
             titleCard="Marcaje abdominal colombiano"
-            :urlImg="require('@/static/cardTwo/marcage.jpg')"
+            :urlImg="require('@/static/cardTwo/marcaje.jpg')"
           />
           <CardTwo
             topCircleOne="300px"
@@ -107,7 +106,7 @@
       <CardCircle
         color1="#ff00f98c"
         color2="#00bfffcf"
-        :urlImg="require('@/static/cardTwo/presoterapia.jpg')"
+        :urlImg="require('@/static/cardTwo/tratamientoRyM.jpeg')"
       />
       <CardDesc
         color2="#ff00f98c"
@@ -126,7 +125,7 @@
       <CardCircle
         color2="#ff00f98c"
         color1="#00bfffcf"
-        :urlImg="require('@/static/cardTwo/marcage.jpg')"
+        :urlImg="require('@/static/cardTwo/marcaje.jpg')"
       />
       <CardDesc
         color1="#ff00f98c"
